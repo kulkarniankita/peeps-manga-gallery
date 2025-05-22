@@ -51,7 +51,6 @@ A modern manga gallery application built with Next.js 15, React 19, and Tailwind
 - `/components` - Reusable React components
 
   - `PeepsClient.tsx` - Manga card component
-  - `MotionWrapper.tsx` - Animation wrapper
   - `/ui` - UI components (cards, buttons, etc.)
 
 - `/lib` - Utility functions and shared code
