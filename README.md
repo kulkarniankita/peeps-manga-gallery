@@ -1,8 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Peeps Gallery
+
+A modern manga gallery application built with Next.js 15, React 19, and Tailwind CSS. This project showcases a beautiful and responsive UI for displaying manga images with smooth animations and transitions.
+
+## Features
+
+- Modern UI with Tailwind CSS
+- Responsive grid layout (1-3 columns based on screen size)
+- Smooth animations using Framer Motion
+- Image gallery with hover effects
+- TypeScript support
+- ESLint for code quality
+- Gradient text effects
+- Responsive image handling with Next.js Image component
+
+## Tech Stack
+
+- [Next.js 15](https://nextjs.org/) - React framework
+- [React 19](https://react.dev/) - UI library
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Framer Motion](https://www.framer.com/motion/) - Animation library
+- [Lucide React](https://lucide.dev/) - Icon library
+
+## Project Structure
+
+### Core Components
+
+- `/app/page.tsx` - Main page component
+
+  - Renders the manga gallery grid
+  - Implements responsive layout
+  - Uses gradient text effects
+  - Manages the overall card container
+
+- `/components/PeepsClient.tsx` - Individual manga card component
+  - Client-side component with animations
+  - Handles image display with Next.js Image
+  - Implements hover effects and transitions
+  - Manages card layout and styling
+
+### Directory Structure
+
+- `/app` - Next.js app directory
+
+  - `page.tsx` - Main gallery page
+  - `layout.tsx` - Root layout component
+  - `globals.css` - Global styles
+  - `favicon.ico` - Website icon
+
+- `/components` - Reusable React components
+
+  - `PeepsClient.tsx` - Manga card component
+  - `MotionWrapper.tsx` - Animation wrapper
+  - `/ui` - UI components (cards, buttons, etc.)
+
+- `/lib` - Utility functions and shared code
+
+  - Contains manga data and content
+
+- `/public` - Static assets
+
+  - Images and other static files
+
+- `/@types` - TypeScript type definitions
+  - Type definitions for manga data
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +85,29 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start the development server with Turbopack
+- `npm run build` - Build the application for production
+- `npm run start` - Start the production server
+- `npm run lint` - Run ESLint for code quality checks
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about the technologies used in this project:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://react.dev/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+- [Framer Motion Documentation](https://www.framer.com/motion/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
+## Deployment
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
